@@ -1,4 +1,4 @@
-package com.example.application.notification;
+package com.example.application.notification_DI;
 
 public interface Notification {
     public void sendNotification();
