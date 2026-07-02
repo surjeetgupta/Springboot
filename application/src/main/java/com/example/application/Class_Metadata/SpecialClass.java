@@ -1,13 +1,11 @@
 package com.example.application.Class_Metadata;
 
-import com.example.application.SpringCore.OrderService;
-import com.example.application.SpringCore.PaymentService;
+import com.example.application.SpringCore.Payment.PaymentService;
 
 public class SpecialClass {
     public static void main(String args[]) {
-        PaymentService payment=new PaymentService();
-        OrderService order=new OrderService(payment);
-        order.placeOrder();
+        //OrderService order=new OrderService(payment);
+        //order.placeOrder();
         System.out.println("Hello World");
 
         Student s1=new Student();
