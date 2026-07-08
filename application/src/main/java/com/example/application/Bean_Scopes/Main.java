@@ -1,6 +1,5 @@
 package com.example.application.Bean_Scopes;
 
-import com.example.application.Bean_Scopes.ApplicationConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -16,8 +15,8 @@ public class Main {
 //        order3.placeOrder();
 //        System.out.println(order==order2); //true because by default spring beans are singleton
 
-        OrderService order1 = context.getBean(OrderService.class);
-        OrderService order2 = context.getBean(OrderService.class);
+        OrderService2 order1 = context.getBean(OrderService2.class);
+        OrderService2 order2 = context.getBean(OrderService2.class);
         System.out.println(order1 == order2); //false because we have used prototype scope for OrderService bean.
     }
 }

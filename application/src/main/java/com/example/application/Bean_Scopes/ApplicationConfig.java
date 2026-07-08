@@ -1,8 +1,5 @@
 package com.example.application.Bean_Scopes;
 
-import com.example.application.SpringCore.Payment.CardPayment;
-import com.example.application.SpringCore.Payment.UpiPayment;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,15 +11,15 @@ public class ApplicationConfig {
     //empty
     @Bean
     @Primary
-    public OrderService order1(){
+    public OrderService2 order1(){
         System.out.println("Creating OrderService bean with name order1");
-        return new OrderService();
+        return new OrderService2();
     }
 
     @Bean
-    public OrderService order2(){
+    public OrderService2 order2(){
         System.out.println("Creating OrderService bean with name order2");
-        return new OrderService();
+        return new OrderService2();
     }
 }
 
